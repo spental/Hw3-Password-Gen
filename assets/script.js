@@ -30,12 +30,12 @@ function generatePassword() {
   var confirmUppercase = confirm('Will The Password Contain Upper Case Letters?');
   var confirmlowercase = confirm('Will The Password Contain Lower Case Letters?');
   var confirmCharacter = confirm('Will The Password Contain Special Charecters?');
-  
+  // 
   if (!confirmNumber && !confirmCharacter && !confirmUppercase && !confirmlowercase) {
     alert("You Must Choose a criteria!");
     return;
   }
-
+  //if true add to PossibleCombos
   if (confirmNumber) {
     PossibleCombos = PossibleCombos.concat(number)
   }
@@ -51,7 +51,7 @@ function generatePassword() {
   if (confirmCharacter) {
     PossibleCombos = PossibleCombos.concat(character)   
   }
-  
+  // Loop through *s the PossibleComos lenght
   for(var i = 0; i < passwordlength; i ++){
    var index = Math.floor(Math.random()* PossibleCombos.length)
    password = password+PossibleCombos[index]
@@ -60,8 +60,7 @@ function generatePassword() {
    console.log(index);
 
   }
-  
-   
+  // end function and print value for "password"
    return password;
 
 };
