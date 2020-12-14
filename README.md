@@ -1,5 +1,13 @@
 # Hw3-Password-Gen
+
 Making Random Password Generator
+
+Deployable Link to site
+https://spental.github.io/Hw3-Password-Gen/
+
+Link to Github
+https://github.com/spental/Hw3-Password-Gen
+
 (--Html code--)
 /Users/kyle/Desktop/Screen Shot 2020-12-13 at 9.36.47 PM.png
 (--JS code--)
